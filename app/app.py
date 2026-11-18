@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-APP_VERSION = "7.0"
+APP_VERSION = "8.0"
 
 
 @app.route("/")
