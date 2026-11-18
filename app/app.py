@@ -7,6 +7,7 @@ app = Flask(__name__)
 def home():
     return jsonify({
         "message": "Welcome to DevOps Production!!!",
+        "version": "2.0",
         "status": "Running"
     })
 
