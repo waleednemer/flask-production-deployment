@@ -3,13 +3,15 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
+APP_VERSION = "3.0"
+
 
 @app.route("/")
 def home():
     return jsonify({
         "application": "flask-production",
         "message": "Welcome to DevOps Production!",
-        "version": "2.0",
+        "version": APP_VERSION,
         "status": "running"
     })
 
@@ -25,7 +27,7 @@ def health():
 def version():
     return jsonify({
         "application": "flask-production",
-        "version": "2.0",
+        "version": APP_VERSION,
         "status": "running"
     })
 
